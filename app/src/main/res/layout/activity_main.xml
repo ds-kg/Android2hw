@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+
+
+<!--    1)-->
+<!--    -Необходимо открыть с помощью интента камеру или галерю или -->
+<!--    что-то на свое усмотрение (прочитать доп инфу о интентах)-->
+<!--    2)-->
+<!--    -Необходимо будет сделать все как на видео-->
+<!--    -Заполняете поля и после нажатия на кнопку send вы должны -->
+<!--    переходить на другое приложение для отправки электронного письма-->
+<!--    -Сделать проверки на заполнения полей, если поля не заполнены -->
+<!--    выводить «Toast» с сообщением «Заполните все поля»-->
+
+    <ImageView
+        android:id="@+id/iv_mail"
+        android:layout_width="407dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_et"
+        android:hint="  Type Mail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_mail"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <EditText
+        android:id="@+id/et_theme"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_et"
+        android:hint="  Type Theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mail"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_et"
+        android:hint="  Type your Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_theme"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_et"
+        android:text="SEND"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_message"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <ImageView
+        android:id="@+id/camera_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_camera_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_btn" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
